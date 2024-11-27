@@ -4,7 +4,6 @@ import plotly.graph_objects as go
 import numpy as np
 import requests
 import yfinance as yf
-import pygame
 
 # Configuración inicial de la página
 st.set_page_config(
@@ -12,14 +11,6 @@ st.set_page_config(
     page_icon="🏡",
     layout="wide"
 )
-
-# Inicializa pygame para manejar los sonidos
-pygame.mixer.init()
-
-# Función para reproducir aplausos
-def reproducir_aplausos():
-    sonido = pygame.mixer.Sound("aplausos.wav")  # Asegúrate de tener el archivo de sonido en el directorio
-    sonido.play()
 
 # Configuración de Banxico API
 BANXICO_API_TOKEN = "c12f3a32914576b3029870226615defce1527efcc49967ebea0a9d6ed14a7c78"
