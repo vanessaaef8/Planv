@@ -1,7 +1,6 @@
 streamlit
 yfinance
 pandas
-pygame
 numpy
 plotly
 requests
